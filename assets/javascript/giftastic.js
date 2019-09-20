@@ -29,10 +29,13 @@ function displayCelebritiesGifs() {
 	// Creating AJAX Call for the specific celebrity button being clicked
 	$.ajax({
 		queryURL: apiURL,
-		method: apiMethod,
+		method: "GET"
+		// headers: {
+		// 	"Access-Control-Allow-Origin": "*"
+		// }
 	}).then(function(celebrityResponse) {
 		// Debugging
-		console.log(celebrityResponse);
+		console.log("celebrityResponse");
 
 		// Setting an array with the returned GIFs for the celebrity
 		celebrityGifArr = celebrityResponse.data;
