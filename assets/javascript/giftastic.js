@@ -30,7 +30,7 @@ function displayCelebritiesGifs() {
 	$.ajax({
 		queryURL: apiURL,
 		method: apiMethod,
-	}).then(function (celebrityResponse) {
+	}).then(function(celebrityResponse) {
 		// Debugging
 		console.log(celebrityResponse);
 
